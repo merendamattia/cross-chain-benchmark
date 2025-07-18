@@ -1,0 +1,33 @@
+{
+  "name": "@mesonfi/clients",
+  "version": "1.28.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "https://github.com/MesonFi/meson-contracts-solidity",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run build:clean-dest && npm run build:clean && npm run build:run && npm run build:clean",
+    "build:run": "npm run build:lib && npm run build:es",
+    "build:clean-dest": "rm -rf lib && rm -rf es",
+    "build:clean": "rm -rf lib-dist && rm -rf es-dist",
+    "build:lib": "tsc --outDir lib-dist && mv lib-dist/src lib",
+    "build:es": "tsc -m esnext --outDir es-dist && mv es-dist/src es",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@mesonfi/base": "^1.28.0"
+  },
+  "dependencies": {
+    "@mesonfi/sdk": "^1.28.0",
+    "@mesonfi/presets": "^1.28.0"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

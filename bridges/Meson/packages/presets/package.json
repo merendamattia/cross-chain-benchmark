@@ -1,0 +1,38 @@
+{
+  "name": "@mesonfi/presets",
+  "version": "1.28.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "https://github.com/MesonFi/meson-contracts-solidity",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "lib",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build"
+  },
+  "peerDependencies": {
+    "@mesonfi/base": "^1.28.0",
+    "@mesonfi/sdk": "^1.28.0"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "1.35.0",
+    "@ckb-lumos/lumos": "^0.22.2",
+    "@mysten/sui": "1.21.0",
+    "@solana/web3.js": "1.87.5",
+    "ethers": "5.7.2",
+    "lodash": "^4.17.21",
+    "starknet": "6.24.1",
+    "tronweb": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "typescript": "^5.4.5"
+  }
+}

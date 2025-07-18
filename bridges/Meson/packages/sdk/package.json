@@ -1,0 +1,60 @@
+{
+  "name": "@mesonfi/sdk",
+  "version": "1.28.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "https://github.com/MesonFi/meson-contracts-solidity",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "lib",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "test": "mocha -r ts-node/register 'tests/**/*.spec.ts'",
+    "build": "tsc",
+    "prepare": "yarn build"
+  },
+  "peerDependencies": {
+    "@mesonfi/base": "^1.28.0"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "1.35.0",
+    "@bitcoinerlab/secp256k1": "^1.1.1",
+    "@ckb-lumos/lumos": "^0.22.2",
+    "@mysten/sui": "1.21.0",
+    "@solana/spl-token": "0.3.8",
+    "@solana/web3.js": "1.87.5",
+    "@ton/core": "0.56.3",
+    "@ton/crypto": "3.3.0",
+    "@ton/ton": "14.0.0",
+    "bitcoinjs-lib": "^6.1.6",
+    "bs58": "^4.0.1",
+    "cross-fetch": "^3.1.5",
+    "ecpair": "^2.1.0",
+    "ethers": "5.7.2",
+    "lodash": "^4.17.21",
+    "starknet": "6.24.1",
+    "tonapi-sdk-js": "2.0.3",
+    "tronweb": "5.2.0",
+    "tweetnacl": "1.0.3",
+    "zksync-web3": "0.13.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/lodash": "^4.14.186",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^20.9.0",
+    "abi-wan-kanabi": "^2.1.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "ethereum-waffle": "^4.0.4",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.5"
+  }
+}

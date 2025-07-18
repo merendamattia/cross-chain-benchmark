@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "lib": [
+      "ES2019",
+      "ES2020",
+      "ES2021"
+    ],
+    "rootDir": ".",
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "typeRoots": [
+      "../node_modules/@types",
+      "../types"
+    ],
+    "skipLibCheck": true,
+    "incremental": true,
+    "isolatedModules": false
+  },
+  "include": [
+    "./src"
+  ],
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

@@ -1,1 +1,1 @@
-# cross-chain-bridges
+# cross-chain-benchmark
